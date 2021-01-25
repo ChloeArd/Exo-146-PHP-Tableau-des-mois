@@ -7,7 +7,6 @@ $mois[7] = "août";
 
 $departement = ["59" => "Nord", "62" => "Pas-de-Calais", "02" => "Aisne", "60" => "Oise", "80" => "Somme"];
 
-//afficher la valeur de l'index 59 Pas finiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii
 echo $departement["59"]."<br>";
 
 //A revoir exercice 7
@@ -15,6 +14,16 @@ $departement["51"] = "Reims";
 
 echo "<br>";
 
+foreach ($mois as $value){
+    echo $value."<br>";
+}
+
+echo "<br>";
+
 foreach ($departement as $value){
     echo $value."<br>";
+}
+
+foreach ($departement as $key => $value){
+    echo " Le déparatement $value à le numéro $key <br>";
 }
